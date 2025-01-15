@@ -1,0 +1,61 @@
+/* Barra di navigazione */
+.navbar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-nav li {
+  display: inline;
+}
+
+.navbar-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-nav a:hover {
+  background-color: #45a049;
+  border-radius: 5px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* Messaggio di login */
+.login-message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login-message h2 {
+  font-size: 24px;
+}
+
+.login-message button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-message button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,27 @@
+<div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-800 via-gray-900 to-black">
+  <div class="bg-gray-800 p-8 rounded-lg shadow-lg max-w-sm w-full">
+    <h2 class="text-3xl font-bold text-center text-white mb-6">Accedi al tuo Account</h2>
+
+    <form (ngSubmit)="login()" class="space-y-4">
+      <!-- Nome utente -->
+      <div>
+        <label for="username" class="block text-sm font-medium text-gray-300">Nome utente</label>
+        <input type="text" id="username" [(ngModel)]="username" name="username" class="mt-2 p-3 w-full border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700 text-white" required />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-300">Password</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" class="mt-2 p-3 w-full border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700 text-white" required />
+      </div>
+
+      <!-- Messaggio di errore -->
+      <div *ngIf="errorMessage" class="text-sm text-red-500 mt-2">{{ errorMessage }}</div>
+
+      <!-- Pulsante di login -->
+      <button type="submit" class="w-full mt-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+        Accedi
+      </button>
+    </form>
+  </div>
+</div>
